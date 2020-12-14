@@ -3,7 +3,7 @@ Entity linking (EL) refers to the task of recognizing mentions of specific entit
 With this model, Users can obtain the Wikipedia's page for certain entity in an article.
 
 ### Overview of this work
-* Explorative 
+* Explorative Analysis
 * Bi-LSTM CRF NER model
 * REL Entity Disambiguity model
 
@@ -16,10 +16,8 @@ Further, to visualize the ditribution of sections in an interective environment.
 Named Entity Recognition is a classification problem of identifying the names of people,organisations,etc (different classes) in a text corpus. I have implemented a 2 layer 
 bidirectional LSTM with CRF layer network using Keras. 
 
-#### Word Embedding
-Sentences are used as inputs for the recurrent neural network. I used pre-trained 300d word2vec to represent each word in vector space. 
-
-#### Bi-LSTM 
+#### Word Embedding and Bi-LSTM
+Sentences are used as inputs for the recurrent neural network. I used pre-trained 300d word2vec to represent each word in vector space.  
 The model is built by one Bi-lstm layer with 300d dimension and 0.2 dropout rate, and one lstm layer with 300d dimension and 0.5 dropout rate. 
 
 #### CRF
