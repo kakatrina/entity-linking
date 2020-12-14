@@ -2,9 +2,15 @@
 Entity linking (EL) refers to the task of recognizing mentions of specific entities in text and assigning unique identifiers to them from an underlying knowledge repository.
 With this model, Users can obtain the Wikipedia's page for certain entity in an article.
 
-### Overview of the model
+### Overview of this work
+* Explorative 
 * Bi-LSTM CRF NER model
 * REL Entity Disambiguity model
+
+### Explorative work
+Before apply any machine learning models, the explorative analysis is imperative needed to understand on our data. The data is crawlled from a daily local newspaper website. To fully understand the categories and content of news, the LDA Mallet has been used to extract topics.
+
+Further, to visualize the ditribution of sections in an interective environment. The dash API has been utilized to visualize the distribution of sections. The user are able to  choose a main category and see the distriution of sub-categories. 
 
 ### Named Entity Recognition using multi-layered bidirectional LSTMs and Word2vec embeddings
 Named Entity Recognition is a classification problem of identifying the names of people,organisations,etc (different classes) in a text corpus. I have implemented a 2 layer 
